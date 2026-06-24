@@ -1,0 +1,165 @@
+#navlist{
+  list-style: none; 
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+.container{
+    min-height:100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("image/BGimage.avif");
+    background-size: cover;      /* poori screen cover */
+    background-position: center; /* center me rakhe */
+    background-repeat: no-repeat;/* repeat na ho */
+}
+
+main{
+    flex: 1;
+}
+
+.navcontainer{
+ width:100%;
+ background-image: linear-gradient(to right, #434343 0%, black 100%);
+ min-height: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+}
+
+nav{
+    width:100%;
+    overflow-x: hidden;
+}
+
+#navlogo{
+    font-size: 1.1cm;
+    color: azure;
+}
+
+a{
+    text-decoration: none;
+     color:azure;
+}
+
+
+#navlist{
+    width:100%;
+    padding: 15px;
+    /* margin-left:20px;
+    margin-right: 20px; */
+    list-style: none;
+    font-size: 0.7cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#itemFlex{
+    display:flex;
+    gap:30px;
+}
+
+.footerbox{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: azure;
+    width:100%;
+    text-align: center;
+    min-height: 40px;
+}
+
+.footerbox p{
+    color: azure;
+    font-size: 2rem;
+}
+
+.contentBox{
+    width: 85%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius: 15px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.leftBox{
+    width: 65%;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.rightBox{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.rightBox img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.leftBox h2{
+    margin-bottom: 15px;
+    color: wheat;
+}
+
+.leftBox h3{
+    margin: 10px 0;
+    color: whitesmoke;
+}
+
+.leftBox ul{
+    padding-left: 25px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.leftBox li{
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.leftBox h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.rightBox img{
+    transition: all 0.3s ease;
+}
+
+.rightBox img:hover{
+    transform: scale(1.02);
+}
